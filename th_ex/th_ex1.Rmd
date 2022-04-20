@@ -1,0 +1,51 @@
+---
+title: "Take-home Exercise 1"
+description: |
+  Creating data visualisation beyond default
+author:
+  - name: LI HONGYI 
+    url: 
+    affiliation: SMU SCIS
+    affiliation_url: https://scis.smu.edu.sg
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Overview
+
+In Take-home Exercise 1, 
+
+## Installing Packages and Importing Data
+
+Before we start to explore the dataset, packages should be installed and the dataset should be imported.
+
+### Installing Packages
+
+tidyverse is required to visualize the data. Besides, webr is also used in this task to create ternary plot.
+
+```{r}
+packages = c('tidyverse','webr')
+for(p in packages){
+  if(!require(p, character.only = T)){
+    install.packages(p)
+  }
+  library(p, character.only = T)
+}
+```
+### Installing Packages
+
+```{r}
+participants <- read_csv("data/Participants.csv")
+```
+
+## Ternary Plot
+
+Ternary Plot is 
+
+### Data Wrangling
+
+
