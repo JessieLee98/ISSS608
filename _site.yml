@@ -1,14 +1,14 @@
 name: "ISSS608"
 title: "ISSS608"
 description: |
-  Visualization Analysis
+  Visual Analysis
 output_dir: "_site"
 navbar:
   left:
     - text: "Take-home Exercise"
       menu:
       - text: "Take-home Exercise 1"
-        href: ""
+        href: "th_ex/th_ex1.html"
       - text: "Take-home Exercise 2"
         href: ""
       - text: "Take-home Exercise 3"
