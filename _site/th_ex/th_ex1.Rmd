@@ -34,7 +34,7 @@ Before we start to explore and visualize the data, required packages should be i
 
 ### Installing Packages
 
-*tidyverse* is required to visualize the data. Besides, *webr* is also used in this task to create ternary plot. The code below installs and loads required packages.
+*tidyverse* is required to visualize the data. Besides, *webr* is also used in this task to create pie chart with donut chart and *ggtern* is used to create ternary chart. The code below installs and loads required packages.
 
 ```{r}
 packages = c('tidyverse','webr', 'ggtern')
