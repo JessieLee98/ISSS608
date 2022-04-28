@@ -128,7 +128,8 @@ Something could be done to improve this bar chart. Mean points could be added an
 ggplot(data=Participant_data, aes(y = Joviality, x= Interest))+ 
 geom_boxplot() +
 stat_summary(geom = "point",fun.y="mean", colour ="red",size=1)+
-facet_grid(Education ~.)
+facet_grid(Education ~.)+
+ggtitle("The Distribution of Joviality \nby Interest Groups and Education")
 ```
 
 
@@ -144,11 +145,13 @@ This box plot is not informative. It seems to show us that the means of jovialit
 
 However, we can still do some improvement of this graph. Means and notch can be added in this bar chart. Besides, violin plot could be added to give a clearer distribution of joviality in different education level.
 
-```{r}
+```{r, fig.width=5}
 ggplot(data=Participant_data, aes(y = Joviality, x= Education))+
 geom_violin(fill="light blue")+ 
 geom_boxplot(notch=TRUE, alpha=0.5, notchwidth=.3)+
-stat_summary(geom = "point",fun.y="mean", colour ="red",size=2)
+stat_summary(geom = "point",fun.y="mean", colour ="red",size=2)+
+ggtitle("The Distribution of Joviality in Education Groups")
+
 
 
 ```
